@@ -5,6 +5,8 @@ mod day_2;
 mod day_3;
 mod day_4;
 mod day_5;
+mod day_6;
+mod day_7;
 
 #[derive(Parser)]
 #[command(group(
@@ -33,6 +35,8 @@ fn main() {
         day_3::run();
         day_4::run();
         day_5::run();
+        day_6::run();
+        day_7::run();
     } else {
         if let Some(day) = args.day {
             match day {
@@ -41,6 +45,8 @@ fn main() {
                 3 => day_3::run(),
                 4 => day_4::run(),
                 5 => day_5::run(),
+                6 => day_6::run(),
+                7 => day_7::run(),
                 _ => println!("Day {day} is not implemented"),
             }
         }
